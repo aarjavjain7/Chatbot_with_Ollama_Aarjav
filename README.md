@@ -1,60 +1,59 @@
-# 🤖 Chatbot with Ollama
+# 🧠 LocalMind AI — Your Private Local Chatbot
 
-An AI-powered chatbot built using **Ollama**, **LangChain**, and **Streamlit** that allows users to interact with Large Language Models (LLMs) running locally on their machine. This project provides a simple and intuitive web interface for private, fast, and API-free conversational AI experiences.
+**LocalMind AI** is a lightweight conversational AI application that lets you interact with locally running Large Language Models (LLMs) through a browser-based interface. Built with Python, Streamlit, LangChain, and Ollama, it brings AI-powered conversations directly to your computer without requiring external LLM APIs.
 
-## 🚀 Features
+## ✨ Features
 
-* 💬 Interactive chatbot interface built with Streamlit
-* 🏠 Run open-source LLMs locally using Ollama
-* 🔒 Complete privacy with no external API dependency
-* ⚡ Fast response generation
-* 🔄 Easily switch between different Ollama-supported models
-* 🎯 Simple and beginner-friendly implementation
+- 💬 Interactive chat interface powered by Streamlit
+- 🏠 Run open-source language models locally with Ollama
+- 🔒 Keep prompts and inference local with a fully local setup
+- ⚡ Generate responses without relying on paid LLM APIs
+- 🔄 Experiment with different Ollama-compatible models
+- 🎯 Beginner-friendly setup and modular architecture
 
-## 🛠️ Tech Stack
+## 🛠️ Technology Stack
 
-* **Python**
-* **Streamlit**
-* **LangChain**
-* **Ollama**
-* **Gemma 2B** (or any Ollama-supported model)
-
-
+- **Python** — Core application logic
+- **Streamlit** — Web interface
+- **LangChain** — Language model integration
+- **Ollama** — Local LLM runtime
+- **Gemma 2B** — Example model
 
 ## 📂 Project Structure
 
 ```text
-Chatbot_with_Ollama/
-│
-├── app.py                 # Main Streamlit application
-├── requirements.txt       # Project dependencies
-├── README.md              # Project documentation
-└── .gitignore             # Ignored files and folders
+LocalMind-AI/
+├── app.py
+├── requirements.txt
+├── README.md
+└── .gitignore
 ```
 
-## ⚙️ Installation and Setup
+## 🚀 Installation and Setup
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Areen3112/Chatbot_with_Ollama.git
-cd Chatbot_with_Ollama
+git clone https://github.com/Aarjav/LocalMind-AI.git
+cd LocalMind-AI
 ```
 
-### 2. Create and activate a virtual environment
+*Make sure the repository exists under your GitHub account before using this command.*
 
-**macOS/Linux**
-
-```bash
-python -m venv venv
-source venv/bin/activate
-```
+### 2. Create a virtual environment
 
 **Windows**
 
 ```bash
 python -m venv venv
 venv\Scripts\activate
+```
+
+**macOS / Linux**
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
 ```
 
 ### 3. Install dependencies
@@ -65,64 +64,62 @@ pip install -r requirements.txt
 
 ### 4. Install Ollama
 
-Download and install Ollama from:
+Download Ollama from the official website:
 
 https://ollama.com/download
 
-### 5. Pull the required model
+### 5. Download a language model
+
+For Gemma 2B, run:
 
 ```bash
 ollama pull gemma:2b
 ```
 
-You can replace `gemma:2b` with any Ollama-supported model such as:
+You can use other supported models, such as `llama3`, `mistral`, or `phi3`, by updating the model configuration in your application accordingly.
 
-* `llama3`
-* `mistral`
-* `phi3`
-* `gemma`
-
-### 6. Run the Streamlit application
+### 6. Start the application
 
 ```bash
 streamlit run app.py
 ```
 
-Open your browser and navigate to:
+Open the following address in your browser:
 
-```text
 http://localhost:8501
-```
 
-## 🎯 How It Works
+## 🔍 How It Works
 
-1. Users enter their queries through the Streamlit interface.
-2. LangChain manages the interaction with the LLM.
-3. Ollama processes the request using a locally hosted model.
-4. The generated response is displayed back to the user.
+1. The user enters a question through the Streamlit interface.
+2. LangChain handles the interaction with the configured language model.
+3. Ollama runs the selected model locally and generates a response.
+4. The response appears in the chatbot interface.
 
-## 📈 Future Improvements
+## 🧪 Planned Improvements
 
-* [ ] Conversation memory support
-* [ ] Multiple model selection
-* [ ] Chat history persistence
-* [ ] Document Question Answering using RAG
-* [ ] Voice input and output
-* [ ] Docker containerization
-* [ ] Deployment support
+- [ ] Conversation memory
+- [ ] Interactive model selection
+- [ ] Persistent chat history
+- [ ] Document question answering with RAG
+- [ ] Voice input and output
+- [ ] Configurable model parameters
+- [ ] Docker support
+- [ ] Deployment options
 
 ## 🤝 Contributing
 
-Contributions are welcome. Feel free to fork this repository and submit pull requests for improvements.
+Contributions and suggestions are welcome. Fork the repository, develop your improvements, and submit a pull request.
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+Licensed under the MIT License, provided the repository includes the corresponding license file.
 
 ## 👨‍💻 Author
 
-**Areen Joshi**
+**Aarjav**
 
-* GitHub: https://github.com/Areen3112
+- GitHub: https://github.com/Aarjavjain7
 
-If you found this project helpful, consider giving it a ⭐ on GitHub!
+---
+
+*LocalMind AI — Your AI, your machine, your control.*
